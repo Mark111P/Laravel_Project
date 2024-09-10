@@ -1,0 +1,82 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin: 0;
+    background-image: url("images/loginBackground1.jpg");
+    background-size: cover;
+}
+.loginForm{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    width: 500px;
+    margin: 5px;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 30px;
+    opacity: 90%;
+    background: linear-gradient(135deg, rgba(0,37,17,1) 0%, rgb(0, 62, 60) 50%, rgba(0,44,59,1) 100%);
+}
+.loginForm>span{
+    padding: 10px;
+    margin: 5px;
+}
+.loginForm>input{
+    outline: none;
+    color: inherit;
+    background-color: inherit;
+    font-size: medium;
+    padding: 10px;
+    margin: 5px;
+    border: 0;
+    border-bottom: 1px solid white;
+    transition-duration: 0.5s;
+}
+.loginForm>input:focus{
+    border-bottom: 1px solid #9bffe0;
+    color: #9bffe0;
+}
+.loginForm>div{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.loginForm>.titleDiv{
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+}
+.loginForm>button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100px;
+    margin-left: calc(50% - 50px);
+}
+.loginButton{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+
+    color: inherit;
+    background-color: #bc0000;
+    transition-duration: 0.5s;
+}
+.loginButton:hover{
+    background-color: #bc006b;
+    box-shadow: 0 0 20px #bc006b;
+}
+.loginForm>.errorDiv{
+    position: absolute;
+    padding: 30px;
+    color: #ffa7a7;
+}
+a{
+    padding: 15px;
+    color: #ffa7a7;
+}
